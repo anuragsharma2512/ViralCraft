@@ -75,12 +75,12 @@ export default function SocialProof() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: idx * 0.15 }}
-              className="relative p-6 rounded-2xl border border-white/5 bg-white/[0.01] backdrop-blur-sm group hover:border-white/10 transition-colors"
+              className="relative p-6 rounded-2xl border border-white/5 bg-white/1 backdrop-blur-sm group hover:border-white/10 transition-colors"
             >
               {/* Highlight background lines */}
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-12 h-[1px] bg-gradient-to-r from-transparent via-violet-500/50 to-transparent"></div>
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-12 h-px bg-linear-to-r from-transparent via-violet-500/50 to-transparent"></div>
               
-              <h3 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-white via-neutral-100 to-neutral-300 bg-clip-text text-transparent group-hover:scale-105 transition-transform duration-300">
+              <h3 className="text-4xl md:text-5xl font-extrabold bg-linear-to-r from-white via-neutral-100 to-neutral-300 bg-clip-text text-transparent group-hover:scale-105 transition-transform duration-300">
                 {stat.value}
               </h3>
               <p className="text-sm font-medium text-neutral-400 mt-2 uppercase tracking-wider">
